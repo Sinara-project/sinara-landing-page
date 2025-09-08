@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,215 +8,259 @@
     </head>
     <body>
 
-        <!-- Cabeçalho -->
+        <!-- Primeira seção - Principal -->
 
         <header>
-            <ul class="cabecalho">
-                <li>
-                    <img src="imagens/Group 20 (1) 1.png" alt="logo"
-                        class="icone">
-                </li>
-                <li>
-                    <a href class="criacao">Área de Criação</a>
-                </li>
-                <li>
-                    <a href class="analise">Análises e Relatórios</a>
-                </li>
-                <li>
-                    <a href class="ajuda">Ajuda</a>
-                </li>
-                <li>
-                    <button class="botao-header" id="contato">
-                        <a href id="a_contato">Contato</a>
-                    </button>
-                </li>
-                <li>
-                    <button class="botao-header" id="comece">
-                        <a href id="comece_ja">Comece já</a>
-                    </button>
-                </li>
-            </ul>
+
+            <nav>
+                <ul class="cabecalho">
+                    <img src="imagens/logo-sinara.svg" alt="">
+                    <li>
+                        <a href class="link-site">Área de Criação</a>
+                    </li>
+                    <li>
+                        <a href class="link-site">Análises e Relatórios</a>
+                    </li>
+                    <li>
+                        <a href id="link-ajuda"><button class="botao-header" id="ajuda">Ajuda</button></a>
+                    </li>
+                    <li>
+
+                        <a href id="a_contato"> <button class="botao-header"
+                                id="contato">Contato</button></a>
+
+                    </li>
+                    <li>
+
+                        <a href id="comece_ja"><button class="botao-header"
+                                id="comece">Comece já </button></a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-
-        <!-- Primeira seção -->
-
-        <section class="secao1">
-            <h1 class="texto_inicial">Otimize a coleta e a análise de dados da
-                ETA industrial</h1>
-            <p class="descricao">Onde a produção <span
-                    class="negrito1">fala</span> e a gestão
-                <span class="negrito2">escuta</span>.</p>
-            <button id="saiba_mais">
-                <a href id="saiba">Saiba Mais</a>
-            </button>
-            <img src="imagens/ondinha.png" alt id="onda">
+        <main>
+            <section class="secao1">
+                <div id="separacao">
+                    <div class="container">
+                        <h1 id="texto-inicial">Otimize a coleta e a <br> análise de dados da ETA</h1>
+                        <p id="descricao">Onde a produção <b>fala</b> e a gestão <b>escuta</b>.</p>
+                        
+                        <a href id="saiba">
+                            <button id="saiba-mais">Saiba mais</button>
+                        </a>
+                    </div>
+                    <img id="imagem-notebook" src="imagens/notebook.svg" alt="imagem do notebook">
+                </div>
         </section>
-
-        <!-- Segunda seção -->
+        
+        <!-- Segunda seção - O que é o Sinara -->
 
         <section class="secao2">
-            <img class="imagens-secao2" id="primeira-imagem"
-                src="imagens/Group 185.png" alt="imagem-sinara">
-            <h1 class="titulos-secao" id="primeiro-titulo">O Que é o
-                Sinara?</h1>
-            <p class="explicacao" id="primeira-explicacao">O SINARA é um
-                aplicativo que visa <br> descomplicar toda a burocracia,
-                agilizar <br>
-                os processos manuais, e facilitar o <br> controle nas Estações
-                de Tratamento de <br> Água, provendo soluções intuitivas, e <br>
-                fáceis de implementar. </p>
-            <hr class="divisao-secao2" id="primeira-linha">
-            <hr class="divisao-secao2" id="segunda-linha">
-            <h1 class="titulos-secao" id="segundo-titulo">
-                Como Funciona?
-            </h1>
-            <h2 class="subtitulo">
-                1. Criação dos formulários
-            </h2>
-            <p class="explicacao" id="segunda-explicacao">A equipe
-                administrativa cria<br>
-                formulários personalizados <br> utilizando o aplicativo.</p>
-            <img class="imagens-secao2" id="segunda-imagem"
-                src="imagens/Group 187.png" alt="img">
-            <img class="imagens-secao2" id="terceira-imagem"
-                src="imagens/Group 188.png" alt="ima">
-            <h2 class="subtitulo" id="segundo-subtitulo">
-                2. Preenchimento dos formulários
-            </h2>
-            <p class="explicacao" id="terceira-explicacao">Os operadores
-                preenchem os <br>
-                formulários criados e disponibilizados <br>
-                em tempo real.
-            </p>
-            <h2 class="subtitulo" id="terceiro-subtitulo">
-                3. Análise
-            </h2>
-            <p class="explicacao" id="quarta-explicacao"> Automaticamente são
-                criados <br>
-                gráficos, planilhas, dashboards e <br> alertas baseados nos
-                dados <br> coletados dos formulários.</p>
-            <img class="imagens-secao2" id="quarta-imagem"
-                src="imagens/Group 189.png" alt="img">
+            <img id="primeira-divisao" src="divisoes/ondinha.svg" alt="transição de ondinha de uma seção para outra.">
+                <img id="secao2-imagem"
+                    src="imagens/imgsecao2.svg" alt="imagem-sinara">
+                <div id="container2">
+                    <h1 class="titulos-secao"
+                        id="oque-eh">O Que é o Sinara?</h1>
+                    <p class="explicacao" id="primeira-explicacao">O SINARA é um
+                        aplicativo que visa descomplicar toda a burocracia,
+                        agilizar os processos manuais, e facilitar o controle nas Estações
+                        de Tratamento de Água, provendo soluções intuitivas, e
+                        fáceis de implementar. </p>
+                </div>
+
         </section>
 
-        <!-- Terceira seção -->
-
+        <!-- Seção 3 - Colaboradores  -->
+         
         <section class="secao3">
-            <h1 class="titulos-secao" id="terceiro-titulo"> Principais
-                benefícios</h1>
-            <table>
-                <tr>
-                    <td class="elemento-beneficios">
-                        <div class="circulos" id="circulo-laranja"> <img
-                                id="cadeado"
-                                src="imagens/Cadeado.png"
-                                alt="icone"></div>
-                        <h3 class="subtitulo-secao3">Dados digitalizados e
-                            seguros</h3>
-                        <p class="texto-explicativo">Registros organizados e
-                            acessíveis a qualquer momento.</p>
-
-                    </td>
-                    <td class="elemento-beneficios">
-                        <div class="circulos" id="circulo-azul-claro"> <img
-                                id="papel"
-                                src="imagens/Papel.png"
-                                alt="icone"></div>
-                        <h3 class="subtitulo-secao3">Menos erros em coletas de
-                            dados</h3>
-                        <p class="texto-explicativo">Validações automáticas que
-                            garantem precisão nos regristro.</p>
-
-                    </td>
-                    <td class="elemento-beneficios">
-                        <div class="circulos" id="circulo-cinza"> <img
-                                id="interface"
-                                src="imagens/Interface.png"
-                                alt="icone"></div>
-                        <h3 class="subtitulo-secao3">Interface intuitiva</h3>
-                        <p class="texto-explicativo">Fácil de usar por
-                            operadores e gestores.</p>
-
-                    </td>
-                    <td class="elemento-beneficios">
-                        <div class="circulos" id="circulo-azul"> <img
-                                id="prancheta"
-                                src="imagens/Prancheta.png"
-                                alt="icone"></div>
-                        <h3 class="subtitulo-secao3">Controle de estoque
-                            eficiente</h3>
-                        <p class="texto-explicativo">Gestão precisa de insumos,
-                            evitando desperdícios.</p>
-
-                    </td>
-                </tr>
-            </table>
-            <hr class="segunda-divisao">
-            <hr class="segunda-divisao">
-        </section>
-
-        <!--Quarta seção-->
-        <section class="secao4">
-            <h1 class="titulos-secao" id="quarto-titulo">
+            <h1 class="titulos-secao" id="titulo-colaboradores">
                 Colaboradores
             </h1>
             <div class="carrossel">
-                <div id="colaborador" class="colaborador"></div>
+                <div id="colaborador" class="titulo-colaborador"></div>
                 <div class="controles">
-                    <button onclick="anterior()">⬅</button>
-                    <button onclick="proximo()">➡</button>
+                    <button class="seta-colaborador"  onclick="anterior()"> 
+                        <img src="icones/seta.svg" id="seta-voltar" alt="seta"> </button>
+                    <button class="seta-colaborador"  onclick="proximo()">
+                        <img src="icones/seta.svg" alt="">
+                    </button>
                 </div>
             </div>
-
         </section>
 
-        <!-- Quinta seção -->
+        <!-- Seção 4 - Funcionamento  -->
+
+      
+        <img id="divisao-secao4" src="divisoes/onda-azul-secao4.svg" alt="divisão da seção com uma onda azul">
+            
+            <section class="secao4"> 
+                <div class="bubble-container">
+                    <span class="bubble"></span>
+                        <span class="bubble"></span>          
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                </div>
+                
+            <h1 class="titulos-secao" id="titulo-funcionamento">Como Funciona?</h1>
+            <div class="container-secao4" id="container1-secao4"></div>
+                <div class="explicacao-secao4" id="explicacao1-secao4">
+                    <h2 class="subtitulo">
+                        1. Criação dos formulários
+                    </h2>
+                    <p class="explicacao" id="segunda-explicacao">A equipe
+                        administrativa cria<br>
+                        formulários personalizados <br> utilizando o aplicativo.</p>
+                </div>
+                <div class="celulares" id="primeiro-celular">
+                    
+                    <img src="imagens/circulo-secao4.svg" class="fundo" alt="fundo circular">
+                    <img src="imagens/celular1-secao4.svg" class="telas" alt="Celular criação formulário">
+                </div>
+           </div>
+           
+            <div id="container2-secao4"> 
+                <img src="imagens/preenchimento-secao4.svg" id="imagem-formulario" alt="imagem intuitiva de preenchimeno do formulário">
+                <div id="explicacao2-secao4">
+                    <h2 class="subtitulo" id="segundo-subtitulo">
+                        2. Preenchimento dos formulários
+                    </h2>
+                    <p class="explicacao" id="explicacao-preenchimento">Os operadores preenchem os
+                        formulários criados <br> e disponibilizados
+                        em tempo real.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="container-secao4" id="container3-secao4">
+                <div class="explicacao-secao4" id="explicacao3-secao4">
+                    <h2 class="subtitulo" id="terceiro-subtitulo">
+                        3. Análise
+                    </h2>
+                    <p class="explicacao" id="explicacao-criacao"> Automaticamente são
+                        criados gráficos, <br> planilhas, dashboards e alertas baseados<br> nos
+                        dados coletados dos formulários.</p>
+                </div>
+                <div class="celulares" id="segundo-celular">
+                    
+                    <img src="imagens/circulo-secao4.svg"  class="fundo" alt="fundo circular">
+                    <img src="imagens/celular2-secao4.svg" class="telas" alt="Tela do dashboards ">
+                </div>
+            </div>  
+         
+        </section>
+
+        <img id="divisao2-secao4" src="divisoes/onda-clara-secao4.svg" alt="divisão da seção 4 para a seção 5">
+           
+
+        <!-- Seção 5 - Benefícios -->
 
         <section class="secao5">
-            <h1 class="titulos-secao" id="quinto-titulo">Alguma dúvida?</h1>
-            <p id="subtitulo-secao5">Nossa equipe está aqui para ajudar! Entre
-                em contato conosco para suporte.</p>
-            <div class="quadro" id="quadro-ajuda">
-                <h2 id="meios-contato">MEIOS DE
-                    CONTATO
-                </h2>
-                <img src="imagens/TELEFONE.png" alt="cel" class="icons"
-                    id="telefone-icon">
-                <p class="dados-sinara" id="numero-sinara">+55 11
-                    91003-6750</p>
-                <img src="imagens/EMAIL.png" alt="email" class="icons"
-                    id="email-icon">
-
-                <p class="dados-sinara"
-                    id="email-sinara">sinaraoficial.suporte@gmail.com</p>
-
-                <a href="https://www.instagram.com/sinara.oficial/"
-                    class="dados_sinara" id="insta-icon"><img
-                        src="imagens/instagram-svgrepo-com 1 (1).png"
-                        alt="insta" class="icons" id="insta-icon"></a>
-                <p class="dados-sinara"
-                    id="insta-sinara">@sinara.oficial</p>
-
-                <label for="text" class="label-campos">
-
-                    <input type="text" class="campos" id="nome-campo"
-                        placeholder="Digite o seu nome completo">
-                    <img src="imagens/pessoa.png" alt="pessoa" class="icons"
-                        id="person-icon">
-                    <hr id="linha-campo">
-                </label>
-
-                <label for="text" class="label-campos">
-                    <textarea type="text" class="campos" id="duvida-campo"
-                        placeholder="Digite sua dúvida"></textarea>
-                </label>
-                <button class="botao-header" id="botao-envio">
-                    <a href class="botao-header" id="enviar">Enviar</a>
-                </button>
-
+            <h1 class="titulos-secao" id="terceiro-titulo"> Principais
+                benefícios</h1>
+            <div id="container-secao5">
+                <div class="blocos-explicativos">
+                    <div class="fundo-secao5" id="fundo1-secao5">
+                        <img class="icones-secao5" id="icone-cadeado" src="icones/Cadeado.svg" alt="Ícone de cadeado">
+                    </div>
+                    <h2 class="beneficio">Dados digitalizados e seguros</h2>
+                    <p class="detalhe">Registros organizados e acessíveis a qualquer momento.</p>
+                </div>
+                <div class="blocos-explicativos">
+                    <div class="fundo-secao5" id="fundo2-secao5">
+                        <img class="icones-secao5" id="icone-papel" src="icones/Papel.svg" alt="Ícone de papel">
+                    </div>
+                    <h2 class="beneficio">Menos erros em coletas de dados</h2>
+                    <p class="detalhe">Validações automáticas garantem precisão nos registros.</p>
+                </div>
+                <div class="blocos-explicativos">
+                    <div class="fundo-secao5" id="fundo3-secao5">
+                        <img class="icones-secao5" id="icone-interface" src="icones/Interface.svg" alt="Ícone de interface">
+                    </div>
+                    <h2 class="beneficio">Interface intuitiva</h2>
+                    <p class="detalhe">Fácil de usar por operadores e gestores.</p>
+                </div>
+                <div class="blocos-explicativos">
+                    <div class="fundo-secao5" id="fundo4-secao5">
+                        <img class="icones-secao5" src="icones/Prancheta.svg" alt="Ícone de prancheta">
+                    </div>
+                    <h2 class="beneficio">Controle de estoque eficiente</h2>
+                    <p class="detalhe">Gestão precisa de insumos, evitando desperdícios.</p>
+                </div>
             </div>
         </section>
-        <footer class="footer">
+
+        <!-- Seção 6 -  Meios de contato -->
+
+        <section class="secao6">
+            <h1 class="titulos-secao" id="titulo-secao6">Alguma dúvida?</h1>
+            <p id="subtitulo-secao6">Nossa equipe está aqui para ajudar! Entre
+                em contato conosco para suporte.</p>
+            <div class="quadro" id="quadro-ajuda">
+                <h2 id="titulo-quadro">MEIOS DE
+                    CONTATO
+                </h2>
+                <div id="container-contatos">
+                    <div class="formas-contato">
+                        <a href="https://wa.link/g33hrg">
+                            <img class="icones-secao6" src="icones/telefone.svg" alt="Icone de telefone">
+                        </a>
+                        <p class="meios-contato" id="numero-sinara">+55 11
+                            2219-1030</p>
+                    </div>
+                    <div class="formas-contato">
+                        <a href="mailto: sinaraoficial.suporte@gmail.com">
+                            <img class="icones-secao6" src="icones/email.svg" alt="ícone de email">
+                        </a>
+
+                        <p class="meios-contato"
+                            id="email-sinara">sinaraoficial.suporte@gmail.com</p>
+                    </div>
+                    <div class="formas-contato">
+                        <a href="">
+                            <img class="icones-secao6" id="icone-insta-secao6" src="icones/icone-instagram.svg" alt="ícone do instagram">
+                        </a>
+                        <p class="meios-contato"
+                            id="insta-sinara">@sinara.oficial</p>
+                    </div>
+                </div>
+                <div id="container-campos">
+                    <div id="campo-nome">
+                        <label for="text" class="label-campos">
+                            <input type="text" class="campos" id="nome-campo"
+                                placeholder="Digite o seu nome completo">
+                            <img src="icones/pessoa.svg" alt="pessoa" class="icons"
+                                id="icone-pessoa">
+                        </label>
+                    </div>
+                    <label for="text" class="label-campos">
+                        <textarea type="text" class="campos" id="duvida-campo"
+                            placeholder="Digite sua dúvida"></textarea>
+                    </label>
+                        <a href="">
+                            <button id="envio-secao6">Enviar</button>
+                        </a>
+                </div>
+            </div>
+        </section>
+    </main>
+        <footer>
             <p>&copy; 2025 Sinara. Todos os direitos reservados.</p>
         </footer>
         <script src="script.js"></script>
