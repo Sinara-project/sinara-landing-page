@@ -96,7 +96,7 @@ const colaboradores = [
     {
       nome: "Rogerio Buscariolo",
       img: "imagens/rogerio.png",
-      descricao: "Olá sou o Rogerio! Sou aluno da primeira série Da Germinare Tech no Instituto J&F. Sou uma pessoa muito carísmática, inteligente, sincera e amigável. Sempre busco meus objetivos e coisas que despertam meu interesse.",
+      descricao: "Olá sou o Rogerio! Sou aluno da primeira série Da Germinare Tech no Instituto J&F. Sou uma pessoa muito carismática, inteligente, sincera e amigável. Sempre busco meus objetivos e coisas que despertam meu interesse.",
       insta: "https://instagram.com/rogerx.bsx",
       github: "https://github.com/buscariolo-rogerio"
     },
