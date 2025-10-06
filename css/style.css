@@ -1,0 +1,16 @@
+html, body, main {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+#titulo {
+    margin: 20px 0px 40px 0px;
+}
