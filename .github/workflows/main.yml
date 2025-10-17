@@ -1,0 +1,27 @@
+name: Verificação de Sintaxe HTML e CSS
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint:
+    name: Verificar HTML e CSS
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Validar HTML com HTMLHint
+        run: |
+          htmlhint "**/*.html" || exit 1
+
+      - name: Validar CSS com Stylelint
+        run: |
+          echo '{
+            "extends": "stylelint-config-standard"
+          }' > .stylelintrc.json
+          stylelint "**/*.css" || exit 1
