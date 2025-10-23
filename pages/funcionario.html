@@ -1,79 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funcionários</title>
+    <title>Alertas</title>
+    <link rel="stylesheet" href="/css/adm.css">
+    <link rel="stylesheet" href="/css/aside.css">
 </head>
 <body>
-    <header>
-        <div id="perfi"><img src="" alt="imagem-perfil"></div>
-        <div id="barra-pesquisa">
-            <img id="icone-lupa" src="/img/lupa.svg" alt="lupa">
-            <input type="search">
-        </div>
-        <a href=""><img src="/img/filtro.svg" alt="filtro"></a>
-        <a href=""><img src="/img/sino.svg" alt="notificação"></a>
-    </header>
+
+    <!-- Barra Lateral -->
+
     
+    <aside>
+        <img id="logo" src="/img/Sinara.svg" alt="">
+        <div id="container-aside">
+            <ul id="lista-aside">
+                <li>
+                    <a href="" class="container-botoes">
+                        <img src="/img/passoinhaBusca.svg" alt="">
+                        <button class="botoes-aside">Funcionários</button>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="container-botoes">
+                        <img src="/img/formulariozinho.svg" alt="">
+                        <button class="botoes-aside">Análise</button>
+                    </a> 
+                </li>
+
+                <li>
+                    <a href="" class="container-botoes">
+                        <img src="/img/alertazinho.svg" alt="">
+                        <button class="botoes-aside">Alertas Emitidos</button>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="container-botoes">
+                        <img src="/img/configuracoes.svg" alt="">
+                        <button class="botoes-aside">Configurações da <br> Indústria</button>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="container-botoes">
+                        <img src="/img/admin.svg" alt="">
+                        <button class="botoes-aside">Admin</button>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Seção Principal -->
+
     <main>
-        <h1>Funcionários Registrados</h1>
-        <button><p>Adicionar</p></button>
-        <a href=""><img src="/img/lixo.svg" alt="deleta-usuario"></a>
+        <ul id="lista-superior">
+            <li>
+                <div id="perfil">
+                    <div id="foto"></div>
+                    <P>Bem-vindo,<br><b>Fulano</b> </P>
+                    
+                </div>
+                
+            </li>
+            <li id="barra-pesquisa">
+                <label>
+                    <img src="/img/lupa.svg" alt="lupa">
+                    <input type="search" placeholder="Pesquisar">
+                </label>
+            </li>
+            
+            <li class="icones-superior">
+                <a href=""><img src="/img/filtro.svg" alt="filtro"></a>
+                <a href=""><img src="/img/sino.svg" alt="notificação"></a>
+            </li>
+            
+        </ul>
+        
+        <h1>Funcionários</h1>
+        <table>
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>EMAIL</th>
+            <th>NOME</th>
+            <th>CARGO</th>
+            <th>EMPRESA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>1</td>
+            <td>sophiaabiaki24@gmail.com</td>
+            <td>Sophia Castro</td>
+            <td>Operador Geral</td>
+            <td>EcoLen</td>
+            </tr>
+            <tr>
+            <td>2</td>
+            <td>gabrieldahora@gmail.com</td>
+            <td>Gabriel Hora</td>
+            <td>Operador Administrativo</td>
+            <td>EcoLen</td>
+            </tr>
+            <tr>
+            <td>3</td>
+            <td>viniciuscastro@gmail.com</td>
+            <td>Vinícius Castro</td>
+            <td>Operário</td>
+            <td>EcoLen</td>
+            </tr>
+        </tbody>
+        </table>
 
-        <div id="externo">
-            <div id="container">
-                <h3 class="topico">ID</h3>
-                <h3 class="topico">Email</h3>
-                <h3 class="topico">Nome</h3>
-                <h3 class="topico">Cargo</h3>
-                <h3 class="topico">Indústria</h3>  
+        <div id="container-alertas">
+            <div id="informacoes-alertas">
 
-                <h3 class="dados">1</h3>
-                <h3 class="dados">buscariolo@bu.org.br</h3>
-                <h3 class="dados">Rogerio Buscariolo</h3>
-                <h3 class="dados">Operador geral</h3>
-                <h3 class="dados">thermastratadoLTDA</h3>
+            </div>
+            <div id="controles">
+                <button class="seta-alertas"  onclick="anterior()"> 
+                    < </button>
+                <button class="seta-alertas"  onclick="proximo()">
+                    >
+                </button>
             </div>
         </div>
-
     </main>
 
-
-
-    <aside>
-        <img src="/img/sinaralogo.svg" alt="">
     
-        <a class="areas" chref=""><img src="/img/pessoinha.svg" alt="pessoinha">
-            <button>
-                <h3>ADMIN</h3>
-            </button>
-        </a>
-
-        <a class="areas" chref=""><img src="/img/passoinhaBusca.svg" alt="pessoinhabusca">
-            <button>
-                <h3>Funcionários</h3>
-            </button>
-        </a>
-
-        <a class="areas" chref=""><img src="/img/formulariozinho.svg" alt="pessoinha">
-            <button>
-                <h3>Relatórios e formulários</h3>
-
-            </button>
-        </a>
-
-        <a class="areas" chref=""><img src="/img/alertazinho.svg" alt="pessoinha">
-            <button>
-                <h3>Alertas Emitidos</h3>
-            </button>
-        </a>
-
-        <a class="areas" chref=""><img src="/img/engranagem.svg" alt="pessoinha">
-            <button>
-                <h3>Configurações das indústrias</h3>
-            </button>
-        </a>
-    </aside>
+    <script src="/Pag-Alertas/script.js"></script>
 </body>
 </html>
