@@ -1,3 +1,11 @@
+/* Fonte importada */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+
 html, body, main {
     height: 100%;
     width: 100%;
@@ -7,7 +15,6 @@ html, body, main {
 
 body {
     color: white;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
 

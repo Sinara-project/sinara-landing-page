@@ -1,93 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios</title>
+    <title>Área Restrita Sinara - Análise</title>
+    <link rel="stylesheet" href="/css/formularios.css">
 </head>
 <body>
-    <header>
-        <div id="perfi"><img src="" alt="imagem-perfil"></div>
-        <div id="barra-pesquisa">
-            <img id="icone-lupa" src="/img/lupa.svg" alt="lupa">
-            <input type="search">
+
+    <!-- Barra Lateral -->
+
+    
+    <aside>
+        <img id="logo" src="/img/sinaralogo.svg" alt="">
+        <div id="container-aside">
+            <ul id="lista-aside">
+                <li>
+                    <a href="" class="container-botoes">
+                        <img src="/img/passoinhaBusca.svg" alt="">
+                        <button class="botoes-aside">Funcionários</button>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="container-botoes">
+                        <img src="/img/formulariozinho.svg" alt="">
+                        <button class="botoes-aside">Análise</button>
+                    </a> 
+                </li>
+
+                <li>
+                    <a href="" class="container-botoes">
+                        <img src="/img/alertazinho.svg" alt="">
+                        <button class="botoes-aside">Alertas Emitidos</button>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="container-botoes">
+                        <img src="/img/configuracoes.svg" alt="">
+                        <button class="botoes-aside">Configurações da Indústria</button>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="container-botoes">
+                        <img src="/img/admin.svg" alt="">
+                        <button class="botoes-aside">Admin</button>
+                    </a>
+                </li>
+
+            </ul>
         </div>
-        <a href=""><img src="/img/filtro.svg" alt="filtro"></a>
-        <a href=""><img src="/img/sino.svg" alt="notificação"></a>
-    </header>
+        
+    </aside>
+    
+
+    <!-- Seção Principal -->
 
     <main>
-        <h1>Relatórios e Formulários</h1>
+        <ul id="lista-superior">
+            <li>
+                <div id="perfil">
+                    <div id="foto"></div>
+                    <P>Bem-vindo,<br><b>Fulano</b> </P>
+                    
+                </div>
+                
+            </li>
+            <li id="barra-pesquisa">
+                <label>
+                    <img src="/img/lupa.svg" alt="lupa">
+                    <input type="search" placeholder="Pesquisar">
+                </label>
+            </li>
+            
+            <li class="icones-superior">
+                <a href=""><img src="/img/filtro.svg" alt="filtro"></a>
+                <a href=""><img src="/img/sino.svg" alt="notificação"></a>
+            </li>
+            
+        </ul>
+        
+        <h1 id="titulo-analise">Relatórios e Formulários</h1>
 
-        <div id="externo">
-            <div id="container">
-                <div class="borda-cinza">
-                    <div class="conteudo-texto">
-                        <h3>Formulário 24/09</h3>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Id pariatur beatae, nemo tenetur optio eum aliquam, esse commodi
-                        ipsum eius veniam qui blanditiis nam et voluptatem nihil necessitatibus
-                        modi omnis.
-                    </div>
-                
-                <div class="borda-cinza">
-                     <div class="conteudo-texto">
-                        <h3>Formulário 25/09</h3>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Id pariatur beatae, nemo tenetur optio eum aliquam, esse commodi
-                        ipsum eius veniam qui blanditiis nam et voluptatem nihil necessitatibus
-                        modi omnis.
-                    </div>
+        <div id="container-relatorios">
+            
+            <div class="relatorios-dashboards">
+                <div class="bloco-formulario">
+                    <h2 class="titulo-formulario">Formulário 24/09</h2>
+                    <p class="descricao-formulario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum a dolore laboriosam! Autem, nobis sequi quis nihil commodi incidunt impedit qui at cupiditate facere quod quam omnis, accusamus animi soluta!</p>
                 </div>
-                <div class="borda-cinza">
-                    <div class="conteudo-imagem">
-                        <img src="/img/form_padrao.svg" alt="formulario">
-                    </div>
+                <img src="/img/grafico-laranja.svg" alt="">
+            </div>
+            <div class="relatorios-dashboards">
+                <div class="bloco-formulario">
+                    <h2 class="titulo-formulario">Formulário 25/09</h2>
+                    <p class="descricao-formulario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum a dolore laboriosam! Autem, nobis sequi quis nihil commodi incidunt impedit qui at cupiditate facere quod quam omnis, accusamus animi soluta!</p>
                 </div>
-                
-                <div class="borda-cinza">
-                    <div class="conteudo-imagem">
-                        <img src="/img/form_padrao.svg" alt="formulario">
-                    </div>
-                </div>    
+                <img src="/img/grafico-azul.svg" alt="">
             </div>
         </div>
     </main>
-
-    <aside>
-        <img src="/img/sinaralogo.svg" alt="">
-    
-        <a class="areas" chref=""><img src="/img/pessoinha.svg" alt="pessoinha">
-            <button>
-                <h3>ADMIN</h3>
-            </button>
-        </a>
-
-        <a class="areas" chref=""><img src="/img/passoinhaBusca.svg" alt="pessoinhabusca">
-            <button>
-                <h3>Funcionários</h3>
-            </button>
-        </a>
-
-        <a class="areas" chref=""><img src="/img/formulariozinho.svg" alt="pessoinha">
-            <button>
-                <h3>Relatórios e formulários</h3>
-
-            </button>
-        </a>
-
-        <a class="areas" chref=""><img src="/img/alertazinho.svg" alt="pessoinha">
-            <button>
-                <h3>Alertas Emitidos</h3>
-            </button>
-        </a>
-
-        <a class="areas" chref=""><img src="/img/engranagem.svg" alt="pessoinha">
-            <button>
-                <h3>Configurações das indústrias</h3>
-            </button>
-        </a>
-    </aside>
-    
 </body>
 </html>
