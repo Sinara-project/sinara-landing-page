@@ -1,0 +1,45 @@
+#titulo-config{
+    color: var(--fonte-azul);
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+#controles{
+    justify-content: center;
+    align-items: center;
+    margin-left: 45%;
+}
+
+.setas{
+    background-color: transparent;
+    border: 2px solid var(--laranja-sinara);
+    color: var(--laranja-sinara);
+    font-size: 1.2rem;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+    margin: 0 auto;
+
+}
+
+.setas:hover {
+    background-color: var(--laranja-sinara);
+    color: white;
+}
+#categorias{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 5vh;
+}
+.categoria{
+    background-color: var(--laranja-sinara);
+    padding: 15px;
+    width: 110px;
+    border-radius:8px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--branco);
+}
