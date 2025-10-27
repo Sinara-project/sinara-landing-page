@@ -38,6 +38,7 @@
     display: flex;
     height: 53vh;
     gap: 30px;
+    margin-bottom: 2rem;
 }
 
 .container-alerta h2 {
@@ -52,29 +53,7 @@
     color: #384994;
     font-weight: 500;
 }
-  
-#controles {
-    display: flex;
-    justify-content: center;
-    margin-top: 1.5rem;
-    gap: 0.8rem;
-}
-  
-.seta-alertas {
-    background-color: transparent;
-    border: 2px solid var(--laranja-sinara);
-    color: var(--laranja-sinara);
-    font-size: 1.2rem;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-weight: 600;
 
-}
-  
-.seta-alertas:hover {
-    background-color: var(--laranja-sinara);
-    color: white;
+#alertas button {
+    color: #FF7655;
 }

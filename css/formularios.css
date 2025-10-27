@@ -42,6 +42,7 @@
     color: var(--azul-sinara07);
     font-weight: 500;
 }
-a{
-    text-decoration: none;
+
+#analise button {
+    color: #FF7655;
 }

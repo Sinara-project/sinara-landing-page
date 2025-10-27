@@ -38,3 +38,23 @@ html, body {
 a{
     text-decoration: none;
 }
+
+.setas{
+    background-color: transparent;
+    border: 2px solid var(--laranja-sinara);
+    color: var(--laranja-sinara);
+    font-size: 1.2rem;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+    margin: 0 auto;
+
+}
+
+.setas:hover {
+    background-color: var(--laranja-sinara);
+    color: white;
+}

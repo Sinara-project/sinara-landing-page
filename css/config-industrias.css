@@ -1,38 +1,21 @@
-#titulo-config{
-    color: var(--fonte-azul);
-    text-align: center;
-    margin-bottom: 5vh;
-}
-
-#controles{
-    justify-content: center;
-    align-items: center;
-    margin-left: 45%;
-}
-
-.setas{
-    background-color: transparent;
-    border: 2px solid var(--laranja-sinara);
-    color: var(--laranja-sinara);
-    font-size: 1.2rem;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-weight: 600;
+#container-industrias{
+    background-color: #fff;
+    border-radius: 20px;
+    border: 2px solid #BFD4E3;
+    box-shadow: 0 6px 15px rgba(191, 212, 227, 0.51);
+    width: 50rem;
+    padding: 30px;
+    transition: 0.3s ease;
     margin: 0 auto;
-
-}
-
-.setas:hover {
-    background-color: var(--laranja-sinara);
-    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #categorias{
     display: flex;
     gap: 2rem;
     margin-bottom: 5vh;
+    margin-right: auto;
 }
 .categoria{
     background-color: var(--laranja-sinara);
@@ -42,4 +25,31 @@
     text-align: center;
     font-weight: 600;
     color: var(--branco);
+}
+ 
+.container{
+    background-color: #E8EDFF;
+    width: 20vw;
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    min-height: 6.5rem;
+}
+
+.container p, h2 {
+    margin: 0;
+}
+
+.container-empresa{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+#configs button {
+    color: #FF7655;
 }
