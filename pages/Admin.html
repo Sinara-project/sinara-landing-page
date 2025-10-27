@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Restrita - Admin</title>
+    <link rel="stylesheet" href="/css/adm.css">
+    <!-- <link rel="stylesheet" href="/css/aside.css"> -->
+</head>
+<body>
+ 
+    <!-- Barra Lateral -->
+ 
+   
+   <aside>
+        <img id="logo" src="/img/Sinara.svg" alt="">
+        <div id="container-aside">
+            <ul id="lista-aside">
+                <li>
+                    <a href="/pages/funcionario.html" class="container-botoes" id="funcionarios">
+                        <img src="/img/passoinhaBusca.svg" alt="">
+                        <button class="botoes-aside">Funcionários</button>
+                    </a>
+                </li>
     
+                <li>
+                    <a href="/pages/formularios.html" class="container-botoes" id="analise">
+                        <img src="/img/formulariozinho.svg" alt="">
+                        <button class="botoes-aside">Análise</button>
+                    </a> 
+                </li>
+    
+                <li>
+                    <a href="/pages/alertas.html" class="container-botoes" id="alertas">
+                        <img src="/img/alertazinho.svg" alt="">
+                        <button class="botoes-aside">Alertas Emitidos</button>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="/pages/config_industria.html" class="container-botoes" id="configs">
+                        <img src="/img/configuracoes.svg" alt="">
+                        <button class="botoes-aside">Configurações da<br>Indústria</button>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="/pages/admin.html" class="container-botoes" id="admins">
+                        <img src="/img/admin.svg" alt="">
+                        <button class="botoes-aside">Administradores</button>
+                    </a>
+                </li>
+    
+            </ul>
+        </div>
+    </aside>
+   
+ 
+    <!-- Seção Principal -->
+ 
+    <main>
+        <ul id="lista-superior">
+            <li>
+                <div id="perfil">
+                    <div id="foto"></div>
+                    <P>Bem-vindo,<br><b>Fulano</b> </P>
+                   
+                </div>
+               
+            </li>
+            <li id="barra-pesquisa">
+                <label>
+                    <img src="/img/lupa.svg" alt="lupa">
+                    <input type="search" placeholder="Pesquisar">
+                </label>
+            </li>
+           
+            <li class="icones-superior">
+                <a href=""><img src="/img/filtro.svg" alt="filtro"></a>
+                <a href=""><img src="/img/sino.svg" alt="notificação"></a>
+            </li>
+           
+        </ul>
+       
+        <div id="container-titulo-botoes">
+            <h1 id="titulo">Administradores Registrados</h1>
+            <div id="container-adicionar">
+                <button id="botao-adicionar"><p>Adicionar</p></button>
+                <a href=""><img src="/img/lixo.svg" alt="deleta-usuario"></a>
+            </div>
+        </div>
+ 
+        <div id="container">
+            <table >
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Email</th>
+                        <th>Nome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>peresgames@gmail.com</td>
+                        <td>Pedreiro</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <div id="modal-func" class="modal">
+        <div class="modal-content">
+          <h2>Adicionar Funcionário</h2>
+     
+          <div class="input-group">
+            <label>
+              <img src="/img/user.svg" alt="">
+              <input type="text" placeholder="Digite o nome completo">
+            </label>
+          </div>
+     
+          <div class="input-group">
+            <label>
+              <img src="/img/email.svg" alt="">
+              <input type="email" placeholder="Digite o Email">
+            </label>
+          </div>
+     
+          <div class="input-group">
+            <label>
+              <img src="/img/cargo.svg" alt="">
+              <input type="text" placeholder="Digite o cargo">
+            </label>
+          </div>
+     
+          <div class="input-group">
+            <label>
+              <img src="/img/empresa.svg" alt="">
+              <input type="text" placeholder="Digite o nome da empresa">
+            </label>
+          </div>
+     
+          <button id="btnAdicionarFunc">Adicionar</button>
+        </div>
+      </div>
+     
+    <script src="/JavaScript/adm.js"></script>
+</body>
+</html>
+ 
