@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área Restrita - Admin</title>
     <link rel="stylesheet" href="/css/adm.css">
-    <!-- <link rel="stylesheet" href="/css/aside.css"> -->
+    <link rel="stylesheet" href="/css/tabela.css">
+   
 </head>
 <body>
- 
-    <!-- Barra Lateral -->
- 
    
    <aside>
         <img id="logo" src="/img/Sinara.svg" alt="">
@@ -91,27 +89,52 @@
         </div>
  
         <div id="container">
-            <table >
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Email</th>
-                        <th>Nome</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>peresgames@gmail.com</td>
-                        <td>Pedreiro</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </main>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Email</th>
+        <th>Nome</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>peresgames@gmail.com</td>
+        <td>Pedreiro</td>
+        <td class="acoes">
+          <button class="menu-btn">
+            <img src="/img/tres_pontinhos.svg" alt="menu">
+          </button>
+          <div class="menu-opcoes">
+            <button class="editar">Editar</button>
+            <button class="excluir">Excluir</button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</main>
+
+
+<div id="modal-editar" class="modal">
+  <div class="modal-content">
+    <h3>Editar Administrador</h3>
+    <label>Nome:</label>
+    <input type="text" id="nome-editar">
+    <label>Email:</label>
+    <input type="email" id="email-editar">
+    <div class="modal-btns">
+      <button id="salvar-editar">Salvar</button>
+      <button id="cancelar-editar">Cancelar</button>
+    </div>
+  </div>
+</div>
     <div id="modal-func" class="modal">
         <div class="modal-content">
-          <h2>Adicionar Funcionário</h2>
+          <h2>Adicionar ADMIN</h2>
      
           <div class="input-group">
             <label>
@@ -126,26 +149,12 @@
               <input type="email" placeholder="Digite o Email">
             </label>
           </div>
-     
-          <div class="input-group">
-            <label>
-              <img src="/img/cargo.svg" alt="">
-              <input type="text" placeholder="Digite o cargo">
-            </label>
-          </div>
-     
-          <div class="input-group">
-            <label>
-              <img src="/img/empresa.svg" alt="">
-              <input type="text" placeholder="Digite o nome da empresa">
-            </label>
-          </div>
-     
           <button id="btnAdicionarFunc">Adicionar</button>
         </div>
       </div>
      
     <script src="/JavaScript/adm.js"></script>
+    <script src="/JavaScript/tabela.js"></script>
 </body>
 </html>
  

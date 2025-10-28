@@ -37,3 +37,22 @@ button {
 #funcionarios button {
     color: #FF7655;
 }
+#botao-adicionar{    
+    background: #FF7A59;
+    color: white;
+    border: none;
+    padding: 6px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#botao-adicionar:hover {
+    background: var(--laranja-hover);
+}
+#container-adicionar{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
