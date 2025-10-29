@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionários</title>
+    <link rel="shortcut icon" href="/img/Sinarinha.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/funcionario.css">
+    <link rel="stylesheet" href="/css/aside.css">
+    <link rel="stylesheet" href="/css/geral.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/lista-superior.css">
+</head>
+<body>
+
+    <!-- Barra Lateral -->
+    <aside>
+        <img id="logo" src="/img/Sinara.svg" alt>
+        <div id="container-aside">
+            <ul id="lista-aside">
+                <li>
+                    <a href="/pages/funcionario.html" class="container-botoes" id="funcionarios">
+                        <img src="/img/passoinhaBusca.svg" alt>
+                        <button class="botoes-aside">Funcionários</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/formularios.html" class="container-botoes" id="analise">
+                        <img src="/img/formulariozinho.svg" alt>
+                        <button class="botoes-aside">Análise</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/alertas.html" class="container-botoes" id="alertas">
+                        <img src="/img/alertazinho.svg" alt>
+                        <button class="botoes-aside">Alertas Emitidos</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/config_industria.html" class="container-botoes" id="configs">
+                        <img src="/img/configuracoes.svg" alt>
+                        <button class="botoes-aside">Configurações da<br>Indústria</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/admin.html" class="container-botoes" id="admins">
+                        <img src="/img/admin.svg" alt>
+                        <button class="botoes-aside">Administradores</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Seção Principal -->
+    <main>
+        <ul id="lista-superior">
+            <li>
+                <div id="perfil">
+                    <div id="foto"></div>
+                    <p>Bem-vindo,<br><b>Fulano</b> </p>
+                </div>
+            </li>
+            <li id="barra-pesquisa">
+                <label>
+                    <img src="/img/lupa.svg" alt="lupa">
+                    <input type="search" placeholder="Pesquisar">
+                </label>
+            </li>
+            <li class="icones-superior">
+                <a href="#"><img src="/img/filtro.svg" alt="filtro"></a>
+                <a href="#"><img src="/img/sino.svg" alt="notificação"></a>
+            </li>
+        </ul>
+
+        <div id="container-titulo-botoes">
+            <h1 id="titulo">Empresa</h1>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOME</th>
+                    <th>EMAIL</th>
+                    <th>TELEFONE</th>
+                    <th>RAMO</th>
+                    <th>ATIVIDADE</th>
+                    <th>INÍCIO DO PLANO</th>
+                    <th>TIPO DE ASSINATURA</th>
+                    <th>AÇÕES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-id="1" data-cargo="Operador Geral" data-empresa="EcoLen" data-cpf="22***4*1**">
+                    <td>1</td>
+                    <td>Ambar</td>
+                    <td>Ambar.suporte@gmail.com</td>
+                    <td>11995911646</td>
+                    <td>Energia</td>
+                    <td>Ativo</td>
+                    <td>10-03-2010</td>
+                    <td>Mensal</td>
+                    <td>
+                        <div class="menu-container">
+                            <button class="opcoes-btn">
+                                <img src="/img/tres_pontinhos.svg" alt="menu">
+                            </button>
+                            <div class="menu-opcoes">
+                                <button class="btn-editar">Editar</button>
+                                <button class="btn-excluir">Excluir</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr data-id="2" data-cargo="Operador Administrativo" data-empresa="EcoLen" data-cpf="31***5*3**">
+                    <td>1</td>
+                    <td>FriBoi</td>
+                    <td>Friboi.suporte@gmail.com</td>
+                    <td>987453627</td>
+                    <td>Energia</td>
+                    <td>Ativo</td>
+                    <td>09-11-2010</td>
+                    <td>Mensal</td>
+                    <td>
+                        <div class="menu-container">
+                            <button class="opcoes-btn">
+                                <img src="/img/tres_pontinhos.svg" alt="menu">
+                            </button>
+                            <div class="menu-opcoes">
+                                <button class="btn-editar">Editar</button>
+                                <button class="btn-excluir">Excluir</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr data-id="3" data-cargo="Operário" data-empresa="EcoLen" data-cpf="98***3*9**">
+                    <td>1</td>
+                    <td>JBS</td>
+                    <td>JBS.suporte@gmail.com</td>
+                    <td>11995911646</td>
+                    <td>Alimentos</td>
+                    <td>Inativo</td>
+                    <td>09-01-1990</td>
+                    <td>Anual</td>
+                    <td>
+                        <div class="menu-container">
+                            <button class="opcoes-btn">
+                                <img src="/img/tres_pontinhos.svg" alt="menu">
+                            </button>
+                            <div class="menu-opcoes">
+                                <button class="btn-editar">Editar</button>
+                                <button class="btn-excluir">Excluir</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Modal de Edição -->
+        <div id="editarModal" class="modal">
+            <div class="modal-content">
+                <h2>Editar Funcionário</h2>
+
+                <input type="hidden" id="editId">
+
+                <label>Nome:</label>
+                <input type="text" id="editNome" placeholder="Nome completo">
+
+                <label>Email:</label>
+                <input type="email" id="editEmail" placeholder="Email">
+
+                <label>Cargo:</label>
+                <input type="text" id="editCargo" placeholder="Cargo">
+
+                <label>CPF:</label>
+                <input type="text" id="editCpf" placeholder="CPF">
+
+                <div class="modal-buttons">
+                    <button id="salvarEdicao">Salvar</button>
+                    <button id="cancelarEdicao">Cancelar</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="/JavaScript/tabela2.js"></script>
+</body>
+</html>
