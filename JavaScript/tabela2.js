@@ -72,3 +72,21 @@ document.getElementById("salvarEdicao").addEventListener("click", function () {
 document.getElementById("cancelarEdicao").addEventListener("click", function () {
   document.getElementById("editarModal").style.display = "none";
 });
+
+
+  const botaoAdicionar = modalFunc.querySelector('#btnAdicionarFunc');
+  if (botaoAdicionar) {
+    botaoAdicionar.addEventListener('click', () => {
+ 
+      alert('Administrador adicionado com sucesso!');
+ 
+      fecharModal();
+    });
+  }
+ 
+window.addEventListener('DOMContentLoaded', () => {
+  const modalAberto = localStorage.getItem('modalAberto');
+  if (modalAberto === 'true') {
+    abrirModal();
+  }
+});
