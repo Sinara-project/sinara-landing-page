@@ -143,3 +143,31 @@ button {
   display: flex;
   justify-content: space-between;
 }
+#btnAdicionarFunc {
+    background: #FF7A59;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+ 
+/* botão primário do modal */
+.btn-primary{
+  background: #FF7A5A; /* laranja */
+  color: white;
+  border: none;
+  padding: 10px 26px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.btn-primary:hover { background: #ff8f74; }
+
+/* quando o menu de opções aparece */
+.menu-opcoes { display: none; position:absolute; background:#fff; border-radius:8px; box-shadow:0 6px 12px rgba(0,0,0,0.12); padding:8px; right:10px; top:36px; z-index:50; }
+.menu-opcoes.show { display:block; }
+.menu-container { position: relative; display:inline-block; }
